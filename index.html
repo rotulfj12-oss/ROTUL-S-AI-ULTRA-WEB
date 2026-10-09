@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ROTUL'S AI ULTRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8 10h8M8 13h5"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m5 17 5-5 3 3 2-2 4 4"/></symbol>
+    <symbol id="i-audio" viewBox="0 0 24 24"><path d="M7 10v4M10 7v10M13 5v14M16 8v8M19 10v4"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14 6a5 5 0 0 0-6.5 6.5L3 17l4 4 4.5-4.5A5 5 0 0 0 18 10l-3 3-4-4z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></symbol>
+    <symbol id="i-paperclip" viewBox="0 0 24 24"><path d="m9 12 5.5-5.5a3.2 3.2 0 0 1 4.5 4.5L11 19a5 5 0 0 1-7-7l8-8"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m4 4 16 8-16 8 3-8zM7 12h13"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M9.7 3h4.6l.7 2.3 2 1.2 2.3-.5 2.3 4-1.7 1.7v2.4l1.7 1.7-2.3 4-2.3-.5-2-1.2-.7 2.3H9.7L9 18.1l-2-1.2-2.3.5-2.3-4L4.1 11.7V9.3L2.4 7.6l2.3-4L7 4.1l2-1.2z"/><circle cx="12" cy="10.5" r="2.5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6 9a7 7 0 0 1 12-2l2 2M4 15l2 2a7 7 0 0 0 12-2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M9 15 15 9M7 17H6a4 4 0 0 1 0-8h4M17 7h1a4 4 0 0 1 0 8h-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/brand-logo.png" alt="ROTUL'S AI ULTRA"></div>
+      <nav class="nav-group" id="nav">
+        <button class="nav-item active" data-view="home"><svg><use href="#i-home"/></svg><span>Beranda</span></button>
+        <button class="nav-item" data-view="chat"><svg><use href="#i-chat"/></svg><span>Chat</span></button>
+        <button class="nav-item" data-view="vision"><svg><use href="#i-eye"/></svg><span>Vision</span></button>
+        <button class="nav-item" data-view="document"><svg><use href="#i-doc"/></svg><span>Dokumen</span></button>
+        <button class="nav-item" data-view="code"><svg><use href="#i-code"/></svg><span>Kode</span></button>
+        <button class="nav-item" data-view="image"><svg><use href="#i-image"/></svg><span>Gambar</span></button>
+        <button class="nav-item" data-view="audio"><svg><use href="#i-audio"/></svg><span>Audio</span></button>
+        <button class="nav-item" data-view="video"><svg><use href="#i-video"/></svg><span>Video</span></button>
+        <button class="nav-item" data-view="tools"><svg><use href="#i-tool"/></svg><span>Alat</span><svg class="chev"><use href="#i-arrow"/></svg></button>
+      </nav>
+      <div class="divider"></div>
+      <nav class="nav-group">
+        <button class="nav-item" data-view="history"><svg><use href="#i-clock"/></svg><span>Riwayat</span></button>
+        <button class="nav-item" data-view="recent"><svg><use href="#i-chat"/></svg><span>Chat Terbaru</span></button>
+        <button class="nav-item" data-view="favorites"><svg><use href="#i-star"/></svg><span>Favorit</span></button>
+        <button class="nav-item" data-view="folder"><svg><use href="#i-folder"/></svg><span>Folder</span></button>
+        <button class="nav-item" data-view="trash"><svg><use href="#i-trash"/></svg><span>Sampah</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="bottom-icons"><button>◈</button><button>◉</button><button>◫</button></div>
+        <b>Lebih dari sekadar AI</b>
+        <p>Ini adalah asisten digitalmu.</p>
+        <small>ROTUL'S AI ULTRA<br>v1.0.0</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div></div>
+        <div class="top-actions">
+          <div class="model-pill">
+            <span>Model:</span>
+            <select id="modelSelect"><option value="openrouter/free">OpenRouter Free Router (free)</option></select>
+            <svg><use href="#i-arrow"/></svg>
+          </div>
+          <button class="round-action" id="refreshModels" title="Muat ulang model"><svg><use href="#i-refresh"/></svg></button>
+          <button class="round-action" id="settingsBtn" title="Pengaturan"><svg><use href="#i-settings"/></svg></button>
+          <button class="profile"><span>●</span></button>
+        </div>
+      </header>
+
+      <section id="view-home" class="view active home-view">
+        <aside id="apiStatus" class="api-status"><div class="status-line"><span id="statusDot"></span><div><b id="statusTitle">OpenRouter API</b><small id="statusText">Belum terhubung</small></div></div><button id="changeKey">Ganti API Key <svg><use href="#i-arrow"/></svg></button></aside>
+
+        <div class="top-stage">
+          <div class="hero-banner"><img src="assets/hero-scene-clean.png" alt="ROTUL robot"></div>
+          <div class="hero-title">ROTUL'S AI ULTRA</div>
+          <div class="tagline">Think <b>•</b> Create <b>•</b> Do More</div>
+        </div>
+
+        <div class="workspace">
+          <div class="composer-card">
+            <textarea id="prompt" placeholder="Tulis pesanmu di sini..."></textarea>
+            <div class="composer-bottom">
+              <div class="composer-tools">
+                <button id="attachBtn" title="Lampirkan"><svg><use href="#i-paperclip"/></svg></button>
+                <button id="imageAttachBtn" title="Gambar"><svg><use href="#i-image"/></svg></button>
+                <button id="micBtn" title="Mikrofon"><svg><use href="#i-mic"/></svg></button>
+                <button title="Lainnya"><svg><use href="#i-more"/></svg></button>
+              </div>
+              <div class="composer-right">
+                <select id="modeSelect"><option value="text">✦ Teks</option><option value="vision">◉ Vision</option></select>
+                <button id="sendBtn" class="send"><svg><use href="#i-send"/></svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel">
+            <div class="quick-title"><b>Semua Fitur dalam Satu Tempat</b><span>Pilih fitur yang kamu butuhkan, dan biarkan AI melakukan sisanya.</span></div>
+            <div class="feature-grid">
+              <button class="feature" data-view="chat"><strong class="c-blue"><svg><use href="#i-chat"/></svg></strong><div><b>Chat</b><span>Tanya jawab dengan AI secara cerdas.</span></div></button>
+              <button class="feature" data-view="vision"><strong class="c-purple"><svg><use href="#i-image"/></svg></strong><div><b>Vision</b><span>Analisis gambar dengan AI.</span></div></button>
+              <button class="feature" data-view="document"><strong class="c-green"><svg><use href="#i-doc"/></svg></strong><div><b>Dokumen</b><span>Baca & rangkum PDF, DOCX, TXT.</span></div></button>
+              <button class="feature" data-view="code"><strong class="c-violet"><svg><use href="#i-code"/></svg></strong><div><b>Kode</b><span>Bantuan coding & penjelasan kode.</span></div></button>
+              <button class="feature" data-view="image"><strong class="c-orange"><svg><use href="#i-image"/></svg></strong><div><b>Gambar</b><span>Generate gambar dari teks.</span></div></button>
+              <button class="feature" data-view="audio"><strong class="c-pink"><svg><use href="#i-audio"/></svg></strong><div><b>Audio</b><span>Ubah suara jadi teks & teks jadi suara.</span></div></button>
+              <button class="feature" data-view="video"><strong class="c-cyan"><svg><use href="#i-video"/></svg></strong><div><b>Video</b><span>Generate video dari teks (tergantung model).</span></div></button>
+              <button class="feature" data-view="tools"><strong class="c-blue"><svg><use href="#i-doc"/></svg></strong><div><b>Matematika</b><span>Penyelesaian soal + langkah pengerjaan.</span></div></button>
+              <button class="feature" data-view="document"><strong class="c-green"><svg><use href="#i-doc"/></svg></strong><div><b>Buat Dokumen</b><span>Word, Excel, PowerPoint, PDF.</span></div></button>
+              <button class="feature" data-view="tools"><strong class="c-navy"><svg><use href="#i-settings"/></svg></strong><div><b>Alat Lainnya</b><span>Tabel, data, penerjemah, & banyak lagi.</span></div></button>
+            </div>
+
+            <div class="quick-settings">
+              <div class="quick-settings-title">Pengaturan Cepat</div>
+              <div class="settings-row">
+                <label class="setting-card slider-card"><span>Temperature</span><input id="temp" type="range" min="0" max="2" value="0.7" step="0.1"><em id="tempVal">0.7</em><svg><use href="#i-arrow"/></svg></label>
+                <label class="setting-card token-card"><span>Max Tokens</span><input id="tokens" type="number" min="128" max="32768" value="4096"><svg><use href="#i-arrow"/></svg></label>
+                <button class="setting-card full-settings" id="fullSettings"><svg><use href="#i-settings"/></svg><span>Pengaturan Lengkap</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-chat" class="view split-view">
+        <div class="chat-pane panel"><div class="section-heading"><h2>Chat</h2><span id="connection">● Belum terhubung</span></div><div id="messages" class="messages"></div><div class="chat-input"><textarea id="chatPrompt" placeholder="Tulis pertanyaan..."></textarea><button id="chatSend" class="send"><svg><use href="#i-send"/></svg></button></div></div>
+        <div class="answer-pane panel"><div class="answer-header"><b>Jawaban AI</b><span id="answerModel">—</span></div><div id="answer" class="answer empty">Hasil & penjelasan akan tampil di sini.</div></div>
+      </section>
+
+      <section id="view-vision" class="view feature-view"><h2>Vision</h2><p>Upload gambar lalu minta AI menganalisisnya.</p><button class="primary" id="visionOpen">Pilih Gambar</button><div id="visionResult" class="result-box">Belum ada gambar.</div></section>
+      <section id="view-document" class="view feature-view"><h2>Dokumen</h2><p>Pilih PDF, DOCX, TXT, atau file lain untuk diproses.</p><button class="primary" id="docOpen">Pilih Dokumen</button><div id="docList" class="result-box">Belum ada dokumen.</div></section>
+      <section id="view-code" class="view feature-view"><h2>Kode</h2><p>Mode coding untuk menjelaskan, memperbaiki, atau membuat kode.</p><textarea id="codePrompt" class="large-input" placeholder="Tempel kode atau jelaskan program yang ingin dibuat..."></textarea><button class="primary run-feature" data-type="code">Jalankan</button><div id="codeResult" class="result-box">Hasil akan muncul di sini.</div></section>
+      <section id="view-image" class="view feature-view"><h2>Gambar</h2><p>Antarmuka generasi gambar untuk model yang mendukungnya.</p><textarea id="imagePrompt" class="large-input" placeholder="Contoh: robot futuristik biru di ruang AI..."></textarea><button class="primary run-feature" data-type="image">Generate</button><div id="imageResult" class="result-box">Hasil gambar akan muncul di sini.</div></section>
+      <section id="view-audio" class="view feature-view"><h2>Audio</h2><p>Antarmuka audio/transkripsi.</p><div class="result-box">Pilih model audio yang kompatibel.</div></section>
+      <section id="view-video" class="view feature-view"><h2>Video</h2><p>Antarmuka video generation.</p><div class="result-box">Pilih model video yang kompatibel.</div></section>
+      <section id="view-tools" class="view feature-view"><h2>Alat Lainnya</h2><div class="tool-cards"><button class="tool-card" data-tool="math">Matematika</button><button class="tool-card" data-tool="translate">Penerjemah</button><button class="tool-card" data-tool="table">Tabel & Data</button><button class="tool-card" data-tool="summarize">Ringkas</button></div><div id="toolResult" class="result-box">Pilih alat.</div></section>
+      <section id="view-history" class="view feature-view"><h2>Riwayat</h2><div id="historyList" class="result-box">Belum ada riwayat.</div></section>
+      <section id="view-recent" class="view feature-view"><h2>Chat Terbaru</h2><div id="recentList" class="result-box">Belum ada chat.</div></section>
+      <section id="view-favorites" class="view feature-view"><h2>Favorit</h2><div class="result-box">Belum ada favorit.</div></section>
+      <section id="view-folder" class="view feature-view"><h2>Folder</h2><div class="result-box">Folder chat siap dikembangkan.</div></section>
+      <section id="view-trash" class="view feature-view"><h2>Sampah</h2><div class="result-box">Belum ada item.</div></section>
+    </main>
+  </div>
+
+
+  <div id="settingsModal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeSettings">×</button>
+      <div class="settings-kicker">PENGATURAN</div>
+      <h2>Pengaturan ROTUL'S AI ULTRA</h2>
+      <p>Gunakan OpenRouter sebagai penyedia AI. API key disimpan hanya di penyimpanan browser pada perangkat ini.</p>
+      <label>OpenRouter API Key<input id="apiKey" type="password" placeholder="sk-or-v1-..."></label>
+      <div class="modal-actions"><button id="saveKey" class="primary">Simpan API Key</button><button id="loadModelsBtn">Muat model</button></div>
+      <div id="modelCount" class="model-count">0 model dimuat.</div>
+      <small>Endpoint: https://openrouter.ai/api/v1</small>
+    </div>
+  </div>
+  <input id="filePicker" type="file" multiple hidden accept="*/*">
+  <input id="imagePicker" type="file" multiple hidden accept="image/*">
+  <script src="renderer.js"></script>
+</body>
+</html>
